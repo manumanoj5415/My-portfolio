@@ -2,7 +2,7 @@
 
 * {
     margin: 0;
-    padding: 0;
+    padding: 7px;
     box-sizing: border-box;
     text-decoration: none;
     border: none;
@@ -27,6 +27,8 @@ body{
     min-height: 100vh;
     background-color: var(--bg-color);
     color: var(--text-color);
+    background-color: #00abf0;
+
 
 }
 .wrapper{
@@ -35,6 +37,8 @@ body{
     height: 45rem;
     /* background-color: red; */
     padding: 2rem;
+    float: right;
+    background-color: white;
     
 }
 .cover{
@@ -48,17 +52,44 @@ body{
     border-top-left-radius: 6rem;
     border-bottom-left-radius: 6rem;
     transform-origin: right;
+    
 }
 .cover.cover-left{
     z-index: -1;
     
 }
-/* .profile-page img{
-    background-color:seagreen ;
-    padding:0;
-    height: 300px;
-    width: 250px;
-} */
+.cover .cover-right .turn {
+    /* z-index: 1; Align right covers to the right side */
+    
+        float: right; /* Align right covers to the right side */
+    
+}
+
+
+
+.profile-page img{
+    
+    border-radius: 50%;
+   max-width: 180px;
+   border: 0.5rem solid var(--white-color);
+   margin-bottom: 8rem;
+   margin: 0;
+   padding: 0px; 
+
+
+}
+.profile-page{
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ /* background-color: seagreen; */
+ border: 10px solid white;
+ position: relative;
+    top: -20px;
+    background-color:white
+ 
+}
 
 .cover .cover-right .turn{
     transform: rotateY('180deg');
@@ -79,14 +110,113 @@ body{
     box-shadow:0 0 .6rem rgba(0,0,0, .1);
     display:felx;
     padding: 2rem;
+    
 }
 
-.social-media{
-    width: 50px;
-    
-    display: flex;
-    justify-content: space-evenly;
+.social-media a{
+    /* width: 50px; */
+    /* padding-inline-start: 10px; */
+    /* background: transparent; */
+    display: inline-flex;
+    justify-content: space-between;
     align-items: center;
     font-size: 1.2rem;
-    color: #000;
+    color: green;
+    /* transition: 5s; */
 }
+.paragrph{
+ color: black;
+ display: flex;
+}
+.profile-page h1{
+    font-size:2.7rem ;
+    line-height: 1;
+}
+.profile-page h3{
+    color: #00abf0;
+}
+.btn{
+    background-color: #00abf0;
+    color: #fff;
+    transition: .1s;
+
+}
+.btn:hover{
+    background:transparent;
+    color:var(--main-color);
+
+}
+.btn-Contact {
+    background-color: #00abf0;
+    color: #fff;
+    transition: .1s;
+}
+.btn-Contact:hover{
+    background:transparent;
+    color:var(--main-color);
+}
+
+.page-right{
+    position: absolute;
+    right: 0;
+    background-color: white;
+}
+.middle-line {
+    width: 2px; /* Adjust the width of the line */
+    height: 100%; /* Make the line cover the entire height */
+    background-color: #000; /* Set the color of the line */
+    position: absolute; /* Position the line */
+    left: 50%; /* Position the line in the middle */
+    top: 0; /* Align the line to the top */
+    transform: translateX(-50%); /* Center the line horizontally */
+}
+.book-page .page-front
+.book-page .page-back{
+       position: absolute;
+       top:0;
+       left:0;
+       width:100% ;
+       height: 100%;
+       background:var(--pages-color) ;
+} */
+.book-page.page-right {
+    position: relative;
+}
+
+#nextPageButton {
+    display: block;
+    margin-top: -55px; /* Adjust the top margin as needed */
+    margin-left: 390px;
+    background-color:rgb(33, 30, 30);
+    color: #fff;
+    transition: .1s;
+    width:35px;
+    padding-top: 0px;
+    /* height: 10px; */
+
+    /* margin-right: auto; */
+}
+#nextPageButton:hover{
+    background:transparent;
+    color:var(--main-color);
+}
+/* .hidden {
+    display: none;
+} */
+.book-page .page-right{
+    position: absolute;
+    right: 0;
+}
+
+.book-page.page-front
+.book-page.page-back{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height: 100%;
+    background: white;
+}
+
+
+
