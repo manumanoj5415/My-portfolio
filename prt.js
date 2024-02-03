@@ -1,23 +1,4 @@
 
-// document.getElementById("nextPageButton").addEventListener("click", function() {
-//     // Get the current URL
-//     var currentUrl = window.location.href;
-    
-//     // Split the URL by '/'
-//     var urlParts = currentUrl.split("/");
-    
-//     // Get the index of the current page in the URL
-//     var currentPageIndex = urlParts.length - 1;
-    
-//     // Increment the current page index
-//     currentPageIndex++;
-    
-//     // Construct the URL for the next page
-//     var nextPageUrl = urlParts.slice(0, currentPageIndex).join("/") + "/" + (parseInt(urlParts[currentPageIndex]) + 1);
-    
-//     // Navigate to the next page
-//     window.location.href = nextPageUrl;
-// });
 document.getElementById("contactButton").addEventListener("click", function() {
     var contactInfo = document.getElementById("contactInfo");
     if (contactInfo.style.display === "none") {
@@ -51,3 +32,5 @@ document.getElementById("projectsButton").addEventListener("click", function() {
         projectsList.style.display = "none";
     }
 });
+
+
